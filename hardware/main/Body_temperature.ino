@@ -29,3 +29,12 @@ float Body_temperature_capture_data(){
   body_temperature_data = data_sum/Body_temperature_data_sampling_rate;
   return(body_temperature_data);
 }
+
+float Get_body_temperature(){
+  if(connect_to_temperature_sensor()){
+    float body_temperature = Body_temperature_capture_data();
+  }else{
+    float body_temperature = 0.0;
+  }
+  
+}

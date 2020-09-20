@@ -28,4 +28,22 @@ int SpO2_capture_data(){
       return pox.getSpO2();
 }
 
+int Get_heart_rate(){
+ if(connect_to_pulse_sensor()){
+    int pulse = Heart_rate_capture_data(); 
+}else{
+     int pulse = 0;
+}
+}
+
+int Get_SpO2(){
+ if(connect_to_pulse_sensor()){
+    int SpO2 = SpO2_capture_data();
+ }else{
+  int SpO2 = 0;
+ }
+}
+
+
+
 void reset_pusle_sensor(){}

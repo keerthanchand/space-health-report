@@ -8,6 +8,9 @@ int Body_temperature_data_sampling_rate = 10;
 int MAX30205_Connection_tries = 5;
 int Pulse_sensor_Connection_tries = 5;
 
+int Data_sampling_rate = 100;
+int Wait_time = 300000;//5 minutes
+
 
 
 
